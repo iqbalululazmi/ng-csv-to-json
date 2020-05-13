@@ -1,0 +1,16 @@
+<h1>
+  {{title}}
+</h1>
+<div class="col-md-3">
+  <div class="row">
+    <input class="form-control" type='file' (change)='convertFile(input)' id='fileInput' #input>
+  </div>
+
+  <div class="row" >
+    <b>CSV Data</b>  : <br> {{  text || "upload CSV" }}
+  </div>
+
+  <div class="row">
+    <b>Converted JSON</b> : <br> {{ JSONData || "upload CSV to conver"  }}
+  </div>
+</div>
